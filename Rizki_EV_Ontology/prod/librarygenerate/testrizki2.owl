@@ -1,0 +1,1622 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/"
+     xml:base="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:kendaraanlistrik="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#">
+    <owl:Ontology rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#propertyUnit -->
+
+    <owl:AnnotationProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#propertyUnit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasSpec -->
+
+    <owl:ObjectProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasSpec">
+        <owl:inverseOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/isSpecOf"/>
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/isSpecOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/isSpecOf">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+        <rdfs:range rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/suppBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/suppBy">
+        <owl:inverseOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/supportOf"/>
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+        <rdfs:range rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/supportOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/supportOf">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+        <rdfs:range rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasDimensionsHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasDimensionsHeight">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasPerformanceAcceleration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasPerformanceAcceleration">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Acceleration, with varying speeds in seconds</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasPerformanceEfficiency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasPerformanceEfficiency">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment>Efficiency in Wh/km (Watt-hours per kilometer)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasPerformanceFuelEconomy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasPerformanceFuelEconomy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Combined fuel economy in miles per gallon (MPG) for hybrid vehicles, considering both the internal combustion engine and the electric motor. This is not used for fully electric vehicles.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasBatteryCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasBatteryCapacity">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Battery capacity in kilowatt-hours (kWh). Will primarily use Usable Battery Capacity as opposed to Full/Nominal Capacity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasBatteryChargingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasBatteryChargingTime">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Battery charging time, with different charging methods</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasBatteryType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasBatteryType">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Battery technology or chemistry, e.g., Lithium-ion, Nickel-Metal Hydride. These can be used to identify if a car is fully electric or hybrid, since most (if not all) produced electric cars use Lithium-ion, vice versa.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDetails">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Details about any additional information or features regarding the electric vehicle that may not be covered by other (data) properties.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsGroundClearance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsGroundClearance">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Ground clearance in millimeters (mm)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsLength">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Length in millimeters (mm)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsSeatCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsSeatCapacity">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Seat capacity, or the number of passengers the vehicle can accommodate</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsStorage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsStorage">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Storage or cargo volume in liters (L)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsWeight">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Weight of the vehicle (in kilograms) with standard equipment, full fluids (fuel, oil, coolant, etc.), and without any passengers or cargo.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasDimensionsWidth">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Width in millimeters (mm)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPerformanceHorsepower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPerformanceHorsepower">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Unit for measuring the power of the vehicle&apos;s engine. For hybrid electric vehicles, values may be obtained from combining the power outputs of both the primary and secondary engine components.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPerformanceRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPerformanceRange">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Maximum range in kilometers (km)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPerformanceTopSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPerformanceTopSpeed">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Top speed in kilometers per hour (km/h)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPerformanceTorque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPerformanceTorque">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Torque in newton meters (Nm). For hybrid vehicles, this may combine both Torque and Secondary Engine Max Torque values.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasPrice">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment>Marketed price of electric vehicle, using Indonesian Rupiah (IDR). For discontinued/unavailable vehicles, price may be -1. For vehicles that are made by order (e.g. Tesla cars), price may be estimated.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/hasType">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Type of electric vehicle (e.g. &quot;Sedan&quot;, &quot;SUV&quot;, &quot;Hatchback&quot;, etc.)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Keluarga -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Keluarga">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Untuk_Mengemudi -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Untuk_Mengemudi">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mobil_Untuk_Perjalanan_Sendiri -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mobil_Untuk_Perjalanan_Sendiri">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengangkut_Penumpang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengisian_Daya_Cepat_Fastcharging -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengisian_Daya_Cepat_Fastcharging">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Ramah_Lingkungan -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Ramah_Lingkungan">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Regenerative_Braking -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Regenerative_Braking">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Rendah_Polusi -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Rendah_Polusi">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Ramah_Lingkungan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Adaptabilitas -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Adaptabilitas">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Daya_Tahan_Baterai -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Daya_Tahan_Baterai">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Electric_Car -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Electric_Car">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Entertainment -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Entertainment">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengangkut_Penumpang -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengangkut_Penumpang">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Cuaca_Ekstrim -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Cuaca_Ekstrim">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Dalam_Kota -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Dalam_Kota">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Daya_Tahan_Baterai"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Luar_Kota -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Luar_Kota">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Daya_Tahan_Baterai"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Onroad -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Onroad">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Adaptabilitas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mobil_Untuk_Keluarga -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mobil_Untuk_Keluarga">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengangkut_Penumpang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Penggunaan_Bisnis -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Penggunaan_Bisnis">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Price -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Price">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Type -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Type">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Acceleration_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Acceleration_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Acceleration_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Acceleration_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Acceleration_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Acceleration_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Berembun"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Hujan_Deras"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Airbag_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Airbag_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Untuk_Keluarga"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan_Ekstra_Untuk_Mengemudi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Airbag_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Airbag_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Airbag_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Airbag_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Untuk_Keluarga -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Untuk_Keluarga">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Keluarga"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Airbag_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ChildSafetyLock_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Seatbelt_High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Antar_Jemput_Sekolah -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Antar_Jemput_Sekolah">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Dalam_Kota"/>
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mobil_Untuk_Keluarga"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Low"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Mid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AntiTheftAlarm_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AntiTheftAlarm_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AntiTheftAlarm_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AntiTheftAlarm_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Capacity_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Capacity_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Capacity_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Capacity_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Capacity_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Capacity_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_ChargingTime_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_ChargingTime_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_ChargingTime_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_ChargingTime_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_ChargingTime_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_ChargingTime_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Type_Lithium-ion -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Type_Lithium-ion">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Type_Nickle-Metal-Hydride -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Type_Nickle-Metal-Hydride">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BlindSpotMonitor_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BlindSpotMonitor_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan_Ekstra_Untuk_Mengemudi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BlindSpotMonitor_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BlindSpotMonitor_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BrakeAssist_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BrakeAssist_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan_Ekstra_Untuk_Mengemudi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BrakeAssist_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BrakeAssist_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ChildSafetyLock_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ChildSafetyLock_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Untuk_Keluarga"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ChildSafetyLock_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ChildSafetyLock_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Convertible -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Convertible">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#CrashSensor_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#CrashSensor_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan_Ekstra_Untuk_Mengemudi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#CrashSensor_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#CrashSensor_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Dimensions_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Dimensions_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Dimensions_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Dimensions_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Dimensions_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Dimensions_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_4WD -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_4WD">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Berembun"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Hujan_Deras"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_AWD -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_AWD">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Berembun"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Hujan_Deras"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_FWD -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_FWD">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_RWD -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_RWD">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Efficiency_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Efficiency_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Efficiency_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Efficiency_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Efficiency_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Efficiency_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#EmergencyStopSignal_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#EmergencyStopSignal_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#EmergencyStopSignal_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#EmergencyStopSignal_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Entertainment_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Entertainment_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Entertainment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Entertainment_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Entertainment_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Entertainment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Entertainment_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Entertainment_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Entertainment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FogLights_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FogLights_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Berembun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FogLights_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FogLights_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuelEconomy_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuelEconomy_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuelEconomy_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuelEconomy_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuelEconomy_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuelEconomy_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#GPSNavigation_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#GPSNavigation_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_GoCar_GrabCar"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_Taksi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#GPSNavigation_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#GPSNavigation_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Hatchback -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Hatchback">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Horsepower_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Horsepower_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Horsepower_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Horsepower_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Horsepower_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Horsepower_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#HybridTechnology_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#HybridTechnology_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#HybridTechnology_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#HybridTechnology_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Hyundai_Ioniq_5_Long_Range_Prime -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Hyundai_Ioniq_5_Long_Range_Prime">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Electric_Car"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Acceleration_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Acceleration_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Capacity_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_ChargingTime_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Type_Lithium-ion"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BrakeAssist_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ChildSafetyLock_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Dimensions_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_AWD"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Efficiency_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#EmergencyStopSignal_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions_Low"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Entertainment_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FogLights_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#GPSNavigation_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Horsepower_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#HybridTechnology_Low"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ParkingSensor_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#RegenerativeBraking_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SUV"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StabilityControl_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Sunroof_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#TopSpeed_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Torque_High"/>
+        <kendaraanlistrik:hasDimensionsHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1647</kendaraanlistrik:hasDimensionsHeight>
+        <kendaraanlistrik:hasPerformanceAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.1</kendaraanlistrik:hasPerformanceAcceleration>
+        <kendaraanlistrik:hasPerformanceEfficiency rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">192</kendaraanlistrik:hasPerformanceEfficiency>
+        <hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74.0</hasBatteryCapacity>
+        <hasBatteryChargingTime>Normal: 8 hours Fastcharge: 16 min</hasBatteryChargingTime>
+        <hasBatteryType>Lithium-ion</hasBatteryType>
+        <hasDimensionsGroundClearance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hasDimensionsGroundClearance>
+        <hasDimensionsLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4635</hasDimensionsLength>
+        <hasDimensionsSeatCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</hasDimensionsSeatCapacity>
+        <hasDimensionsStorage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">527</hasDimensionsStorage>
+        <hasDimensionsWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2120</hasDimensionsWeight>
+        <hasDimensionsWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1890</hasDimensionsWidth>
+        <hasPerformanceHorsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">214</hasPerformanceHorsepower>
+        <hasPerformanceRange rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">385</hasPerformanceRange>
+        <hasPerformanceTopSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">185</hasPerformanceTopSpeed>
+        <hasPerformanceTorque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">605</hasPerformanceTorque>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">789000000</hasPrice>
+        <hasType>SUV</hasType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Hyundai_Ioniq_5_Standard_Range_Prime -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Hyundai_Ioniq_5_Standard_Range_Prime">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Electric_Car"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Acceleration_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Capacity_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_ChargingTime_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_Type_Lithium-ion"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BrakeAssist_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ChildSafetyLock_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Comfort_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Dimensions_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_AWD"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Efficiency_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#EmergencyStopSignal_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions_Low"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Entertainment_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FogLights_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#GPSNavigation_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Horsepower_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#HybridTechnology_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ParkingSensor_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#RegenerativeBraking_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SUV"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Seatbelt_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StabilityControl_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Sunroof_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#TopSpeed_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Torque_High"/>
+        <kendaraanlistrik:hasDimensionsHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1647</kendaraanlistrik:hasDimensionsHeight>
+        <kendaraanlistrik:hasPerformanceAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</kendaraanlistrik:hasPerformanceAcceleration>
+        <kendaraanlistrik:hasPerformanceEfficiency rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">183</kendaraanlistrik:hasPerformanceEfficiency>
+        <hasBatteryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">54.0</hasBatteryCapacity>
+        <hasBatteryChargingTime>Normal: 6 hours Fastcharge: 17 min</hasBatteryChargingTime>
+        <hasBatteryType>Lithium-ion</hasBatteryType>
+        <hasDimensionsGroundClearance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hasDimensionsGroundClearance>
+        <hasDimensionsLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4635</hasDimensionsLength>
+        <hasDimensionsSeatCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</hasDimensionsSeatCapacity>
+        <hasDimensionsStorage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">531</hasDimensionsStorage>
+        <hasDimensionsWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1905</hasDimensionsWeight>
+        <hasDimensionsWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1890</hasDimensionsWidth>
+        <hasPerformanceHorsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">168</hasPerformanceHorsepower>
+        <hasPerformanceRange rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">295</hasPerformanceRange>
+        <hasPerformanceTopSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">185</hasPerformanceTopSpeed>
+        <hasPerformanceTorque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">350</hasPerformanceTorque>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">748000000</hasPrice>
+        <hasType>SUV</hasType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan_Ekstra_Untuk_Mengemudi -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan_Ekstra_Untuk_Mengemudi">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Untuk_Mengemudi"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Airbag_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BlindSpotMonitor_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BrakeAssist_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#CrashSensor_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StabilityControl_High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_GoCar_GrabCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_GoCar_GrabCar">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Dalam_Kota"/>
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Onroad"/>
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Penggunaan_Bisnis"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#GPSNavigation_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Low"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Mid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_Taksi -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_Taksi">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Onroad"/>
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Penggunaan_Bisnis"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#GPSNavigation_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Low"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Mid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Berembun -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Berembun">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Cuaca_Ekstrim"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FogLights_High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Hujan_Deras -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Hujan_Deras">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Cuaca_Ekstrim"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_4WD"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_AWD"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StabilityControl_High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Dalam_Kota -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Dalam_Kota">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Dalam_Kota"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Low"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Mid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Keluar_Kota -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Keluar_Kota">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Luar_Kota"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mobil_Zero_Emission -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mobil_Zero_Emission">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Rendah_Polusi"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Emissions_Low"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mudik_Pulang_Kampung -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mudik_Pulang_Kampung">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Luar_Kota"/>
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mobil_Untuk_Keluarga"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_Mid"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_Mid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ParkingSensor_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ParkingSensor_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ParkingSensor_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#ParkingSensor_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengiriman_Barang -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengiriman_Barang">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Penggunaan_Bisnis"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#PengisianDaya_Fastcharge -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#PengisianDaya_Fastcharge">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengisian_Daya_Cepat_Fastcharging"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery_ChargingTime_High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Perjalanan_Kerja_dan_Sekolah -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Perjalanan_Kerja_dan_Sekolah">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mobil_Untuk_Perjalanan_Sendiri"/>
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Dalam_Kota"/>
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Onroad"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Low"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Mid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Perjalanan_Liburan -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Perjalanan_Liburan">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mengemudi_Luar_Kota"/>
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Mobil_Untuk_Keluarga"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_Mid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Price_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Price_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Price_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Price_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Price_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Price_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Keluar_Kota"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mudik_Pulang_Kampung"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Perjalanan_Liburan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Antar_Jemput_Sekolah"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_GoCar_GrabCar"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_Taksi"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Dalam_Kota"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Range_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Antar_Jemput_Sekolah"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_GoCar_GrabCar"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Layanan_Taksi"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Dalam_Kota"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#RegenerativeBraking_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#RegenerativeBraking_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Regenerative_Braking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#RegenerativeBraking_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#RegenerativeBraking_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Regenerative_Braking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SUV -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SUV">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mudik_Pulang_Kampung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SeatCapacity_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mudik_Pulang_Kampung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Seatbelt_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Seatbelt_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Aman_Untuk_Keluarga"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Seatbelt_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Seatbelt_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Sedan -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Sedan">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StabilityControl_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StabilityControl_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Keamanan_Ekstra_Untuk_Mengemudi"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Cuaca_Hujan_Deras"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StabilityControl_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StabilityControl_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Safety"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mudik_Pulang_Kampung"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Perjalanan_Liburan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#StorageCargoVolume_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Dimensions"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mudik_Pulang_Kampung"/>
+        <supportOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Perjalanan_Liburan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Sunroof_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Sunroof_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Sunroof_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Sunroof_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#TopSpeed_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#TopSpeed_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#TopSpeed_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#TopSpeed_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#TopSpeed_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#TopSpeed_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Torque_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Torque_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Torque_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Torque_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Torque_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Torque_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Truck -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Truck">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/FuncReq"/>
+            <rdf:Description rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Product"/>
+            <rdf:Description rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone/Specification"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

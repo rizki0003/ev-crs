@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#"
+     xml:base="http://www.risetgroup.org/ontologies/recommendersystem/smartphone"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SupportOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#SupportOf">
+        <owl:inverseOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#suppBy"/>
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification"/>
+        <rdfs:range rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuncReq"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasSpec -->
+
+    <owl:ObjectProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#hasSpec">
+        <owl:inverseOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#isSpecOf"/>
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Product"/>
+        <rdfs:range rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#isSpecOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#isSpecOf">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification"/>
+        <rdfs:range rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#suppBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#suppBy">
+        <rdfs:domain rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuncReq"/>
+        <rdfs:range rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Cuaca_Ekstrim -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Cuaca_Ekstrim">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Electric_Car -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Electric_Car">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuncReq -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuncReq">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengisian_Daya -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengisian_Daya">
+        <rdfs:subClassOf rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuncReq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Product -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Product">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification -->
+
+    <owl:Class rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryCapacity_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryCapacity_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryCapacity_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryCapacity_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryCapacity_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryCapacity_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryChargingTime_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryChargingTime_High">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryChargingTime_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryChargingTime_Low">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryChargingTime_Mid -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryChargingTime_Mid">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryType_Lithium-ion -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryType_Lithium-ion">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryType_NickelmetalHydride -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryType_NickelmetalHydride">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_4WD -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_4WD">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_AWD -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_AWD">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Hyundai_Ioniq_5_AWD -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Hyundai_Ioniq_5_AWD">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Electric_Car"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryCapacity_Mid"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryChargingTime_High"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryType_Lithium-ion"/>
+        <hasSpec rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_AWD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Hujan_Deras -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Mengemudi_Hujan_Deras">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Cuaca_Ekstrim"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#AdjustableHeadlights_High"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#DriveType_AWD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengisian_Daya_Cepat -->
+
+    <owl:NamedIndividual rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengisian_Daya_Cepat">
+        <rdf:type rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Pengisian_Daya"/>
+        <suppBy rdf:resource="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#BatteryChargingTime_High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#FuncReq"/>
+            <rdf:Description rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Product"/>
+            <rdf:Description rdf:about="http://www.risetgroup.org/ontologies/recommendersystem/smartphone#Specification"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
