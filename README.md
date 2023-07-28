@@ -3,7 +3,7 @@
 - Apache Jena Fuseki 4.8.0 (`apache-jena-fuseki-4.8.0/`)
 - xampp 5.6.12
 
-## Additional
+## Additional requirements
 - Protege 5.5.0 (to navigate the ontology), but not necessary to run the final result of this system.
 
 ## Running
