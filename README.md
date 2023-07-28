@@ -1,9 +1,9 @@
 # ev-crs
-## Requirements for running
-- Apache Jena Fuseki 4.8.0 (`apache-jena-fuseki-4.8.0/`)
-- xampp 5.6.12
+## Requirements
+- Apache Jena Fuseki **4.8.0** (`apache-jena-fuseki-4.8.0/`)
+- xampp/PHP **5.6.12**
 
-## Additional requirements
+## Optional requirements
 - Protege 5.5.0 (to navigate the ontology), but not necessary to run the final result of this system.
 
 ## Running
